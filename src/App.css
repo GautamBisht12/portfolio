@@ -1,0 +1,17 @@
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+  background-size: 300%;
+}
+
+.bg-300 {
+  background-size: 300%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -300% center;
+  }
+}
