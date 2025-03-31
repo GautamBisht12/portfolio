@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // You need to install this package
 
 const Navbar = () => {
   return (
@@ -7,64 +8,64 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold text-gray-800">Gautam Bisht</h1>
         <ul className="flex space-x-6">
           <li>
-            <Link
+            <ScrollLink
               to="hero"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               Home
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="about"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               About
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="tech-stack"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               Tech Stack
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="experience"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               Experience
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="projects"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               Projects
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="contact"
               smooth={true}
               duration={500}
               className="cursor-pointer text-gray-800 hover:text-blue-600"
             >
               Contact
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </div>
