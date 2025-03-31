@@ -22,7 +22,7 @@ const Contact = () => {
             <textarea
               placeholder="Your Message"
               className="w-full p-2 rounded-lg"
-              rows="5"
+              rows={5}
             ></textarea>
           </div>
           <button

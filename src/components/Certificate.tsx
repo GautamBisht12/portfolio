@@ -1,14 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const certifications = [
-  {
-    name: "MERN Full Stack Development Course",
-    imageSrc: "",
-    alt: "Ducat Certificate",
-    downloadName: "Ducat_MERN_Certificate.jpg",
-  },
-];
-
 const Certifications = () => {
   return (
     <>

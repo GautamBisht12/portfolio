@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,84 +13,11 @@ import { SiTailwindcss, SiWordpress } from "react-icons/si";
 import { MovingBorderDemo } from "./MovingButton";
 
 import { FaNode, FaWordpress, FaCss3, FaNpm } from "react-icons/fa";
-import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
-import {
-  SiTypescript,
-  SiAppwrite,
-  SiMongodb,
-  SiNetlify,
-  SiVercel,
-  SiPostman,
-} from "react-icons/si";
+import { SiAppwrite, SiMongodb, SiNetlify, SiPostman } from "react-icons/si";
 
 const SkillsCards = () => {
-  const skills = [
-    {
-      title: "Frontend",
-      icon: <FaReact className="text-blue-500 text-4xl animate-spin" />,
-      items: [
-        {
-          name: "HTML",
-          icon: <FaHtml5 className="text-orange-600" size={28} />,
-        },
-        {
-          name: "CSS",
-          icon: <FaCss3Alt className="text-blue-600" size={28} />,
-        },
-        {
-          name: "JavaScript",
-          icon: <FaJs className="text-yellow-500" size={28} />,
-        },
-        {
-          name: "React",
-          icon: <FaReact className="text-blue-500" size={28} />,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss className="text-teal-400" size={28} />,
-        },
-        {
-          name: "Wordpress",
-          icon: <SiWordpress className="text-blue-400" size={28} />,
-        },
-      ],
-    },
-    {
-      title: "Backend",
-      icon: <FaServer className="text-green-500 text-4xl" />,
-      items: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="text-green-600" size={28} />,
-        },
-        {
-          name: "Express",
-          icon: <SiExpress className="text-gray-500" size={28} />,
-        },
-        {
-          name: "Database",
-          icon: <FaDatabase className="text-purple-500" size={28} />,
-        },
-      ],
-    },
-    {
-      title: "Tools",
-      icon: <FaToolbox className="text-red-500 text-4xl" />,
-      items: [
-        { name: "GitHub", icon: <FaGithub className="text-white" size={28} /> },
-        {
-          name: "Postman",
-          icon: <SiPostman className="text-orange-500" size={28} />,
-        },
-        {
-          name: "Appwrite",
-          icon: <SiAppwrite className="text-pink-500" size={28} />,
-        },
-      ],
-    },
-  ];
-
   return (
     <div className="flex flex-wrap justify-center gap-6 py-8">
       <div className="tech-stack flex gap-5 flex-wrap justify-center pt-10"></div>

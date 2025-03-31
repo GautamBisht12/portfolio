@@ -1,6 +1,13 @@
 import { Button } from "./ui/moving-border";
+import { ReactNode } from "react";
 
-export function MovingBorderDemo({ content, icon }) {
+// Define a proper interface for the component props
+interface MovingBorderDemoProps {
+  content?: ReactNode;
+  icon?: ReactNode;
+}
+
+export function MovingBorderDemo({ content, icon }: MovingBorderDemoProps) {
   return (
     <div>
       <Button

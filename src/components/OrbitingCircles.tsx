@@ -1,27 +1,8 @@
 import { OrbitingCircles } from "./ui/orbiting-circles";
-import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from "lucide-react";
-import { motion } from "framer-motion";
+
 import "../App.css";
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGithub,
-  FaDatabase,
-  FaServer,
-  FaToolbox,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiPostman,
-  SiAppwrite,
-  SiWordpress,
-} from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
 
 export function OrbitingCirclesDemo() {
   return (
