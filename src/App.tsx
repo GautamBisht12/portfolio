@@ -7,10 +7,11 @@ import Certifications from "./components/Certificate.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import Projects from "./components/Projects.tsx";
+// import { MovingBorderDemo } from "./components/MovingButton.tsx";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-950 text-white relative">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-zinc-950 text-white relative">
       {/* Floating Navbar */}
       <Navbar />
 

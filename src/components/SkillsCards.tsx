@@ -10,12 +10,19 @@ import {
   FaServer,
   FaToolbox,
 } from "react-icons/fa";
+import { SiTailwindcss, SiWordpress } from "react-icons/si";
+import { MovingBorderDemo } from "./MovingButton";
+
+import { FaNode, FaWordpress, FaCss3, FaNpm } from "react-icons/fa";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
 import {
-  SiTailwindcss,
-  SiExpress,
-  SiPostman,
+  SiTypescript,
   SiAppwrite,
-  SiWordpress,
+  SiMongodb,
+  SiNetlify,
+  SiVercel,
+  SiPostman,
 } from "react-icons/si";
 
 const SkillsCards = () => {
@@ -87,36 +94,100 @@ const SkillsCards = () => {
 
   return (
     <div className="flex flex-wrap justify-center gap-6 py-8">
-      {skills.map((skill, index) => (
-        <div
-          key={index}
-          className="max-w-sm w-full p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl border border-white/20"
-        >
-          <div className="flex items-center gap-4 mb-10">
-            {skill.icon}
-            <h2 className="text-2xl font-bold text-white">{skill.title}</h2>
-          </div>
-          {skill.title === "Frontend" ? (
-            <div className="grid grid-cols-2 gap-4">
-              {skill.items.map((item, idx) => (
-                <div key={idx} className="flex gap-3 items-center text-[20px]">
-                  {item.icon}
-                  <span className="text-white text-[15px]">{item.name}</span>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <ul className="space-y-4">
-              {skill.items.map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  {item.icon}
-                  <span className="text-white">{item.name}</span>
-                </li>
-              ))}
-            </ul>
-          )}
+      <div className="tech-stack flex gap-5 flex-wrap justify-center pt-10"></div>
+
+      <div className="max-w-sm w-full p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-1xl border border-white/20">
+        <div className="flex items-center gap-4 mb-10">
+          <FaReact className="text-blue-500 text-4xl animate-spin" />
+          <h2 className="text-2xl font-bold text-white">Frontend</h2>
         </div>
-      ))}
+
+        <div className="">
+          <div className="flex flex-wrap gap-2   text-[20px]">
+            <MovingBorderDemo
+              content=""
+              icon={<FaJs size="35" color="yellow" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<FaReact size="35" color="skyblue" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<RiTailwindCssFill size="35" color="skyblue" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<FaHtml5 size="35" color="orange" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<FaCss3 size="35" color="skyblue" />}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="max-w-sm w-full p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-1xl border border-white/20">
+        <div className="flex items-center gap-4 mb-10">
+          <FaServer className="text-green-500 text-4xl" />
+          <h2 className="text-2xl font-bold text-white">Backend</h2>
+        </div>
+
+        <div className="">
+          <div className="flex flex-wrap gap-2   text-[20px]">
+            <MovingBorderDemo
+              content=""
+              icon={<FaNode size="35" color="green" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<SiExpress size="35" color="skyblue" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<SiMongodb size="35" color="lightgreen" />}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="max-w-sm w-full p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-1xl border border-white/20">
+        <div className="flex items-center gap-4 mb-10">
+          <FaToolbox className="text-red-500 text-4xl" />
+          <h2 className="text-2xl font-bold text-white">Tools</h2>
+        </div>
+
+        <div className="">
+          <div className="flex flex-wrap gap-2   text-[20px]">
+            <MovingBorderDemo
+              content=""
+              icon={<FaWordpress size="35" color="skyblue" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<FaGithub size="35" color="white" />}
+            />
+
+            <MovingBorderDemo
+              content=""
+              icon={<SiAppwrite size="35" color="red" />}
+            />
+
+            <MovingBorderDemo
+              content=""
+              icon={<SiNetlify size="35" color="skyblue" />}
+            />
+
+            <MovingBorderDemo
+              content=""
+              icon={<FaNpm size="35" color="skyblue" />}
+            />
+            <MovingBorderDemo
+              content=""
+              icon={<SiPostman size="35" color="orange" />}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Layout } from "lucide-react";
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-[100]">
         <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 flex items-center gap-6 border border-white/20">
           <a
             href="#"

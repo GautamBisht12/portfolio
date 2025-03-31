@@ -84,42 +84,39 @@ const projects = {
   ],
   react: [
     {
-      title: "Task Management App",
-      shortDesc: "Collaborative task management solution",
+      title: "Movie DB",
+      shortDesc: "Movie Database with TMDb API",
       category: "react",
       fullDesc:
-        "Real-time task management application with team collaboration features, drag-and-drop interface, and progress tracking.",
-      tech: ["React", "Firebase", "Material-UI"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      image:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&auto=format&fit=crop",
+        "A React-based movie database application with search functionality and detailed movie information.",
+      tech: ["React", "TMDb API", "Material-UI", "Axios"],
+      github: "https://github.com/GautamBisht12/MovieDB-React-App",
+      live: "https://movie-db-pro.netlify.app/",
+      image: "assets/Moviedb.png",
     },
     {
-      title: "Social Media Dashboard",
-      shortDesc: "Analytics and management platform",
+      title: "Youtube UI Clone",
+      shortDesc: "Youtube UI Clone using YouTube v3 API (RapidAPI)",
       category: "react",
       fullDesc:
-        "A React-based dashboard for managing and analyzing social media accounts with real-time data updates.",
-      tech: ["React", "Redux", "Recharts"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+        "A React-based YouTube UI clone with search functionality and video playback.",
+      tech: ["React", "Material UI", "Axios", "RapidAPI"],
+      github: "https://github.com/GautamBisht12/React-Youtube-clone",
+      live: "https://my-tube-youtube-clone.netlify.app/",
+      image: "assets/youtube-clone.png",
     },
   ],
   mern: [
     {
-      title: "E-Commerce Platform",
-      shortDesc: "Full-stack e-commerce solution",
+      title: "Chat Application",
+      shortDesc: "MERN Full Stack Chat Application",
       category: "mern",
       fullDesc:
-        "A comprehensive e-commerce platform built with MERN stack featuring real-time inventory management, payment processing, and admin dashboard.",
-      tech: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
+        "A full-stack chat application built with MERN stack, featuring real-time messaging and user authentication.",
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "Zustand"],
       github: "https://github.com",
-      live: "https://demo.com",
-      image:
-        "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop",
+      live: "https://mern-chat-app-6nc2.onrender.com/",
+      image: "assets/chat.png",
     },
     {
       title: "Learning Management System",
@@ -132,6 +129,31 @@ const projects = {
       live: "https://demo.com",
       image:
         "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop",
+    },
+  ],
+  wordpress: [
+    {
+      title: "Upsell Wholesale",
+      shortDesc: "Wholesale Distributors",
+      category: "wordpress",
+      fullDesc:
+        "A Upsell Wholesale website built with WordPress and WooCommerce, featuring a custom theme .",
+      tech: ["WordPress", "WooCommerce", "Elementor"],
+      github: "",
+      isGithub: false,
+      live: "https://upsellwholesale.com/",
+      image: "assets/Upsellwholesale.png",
+    },
+    {
+      title: "Upsell Wholesale USA",
+      shortDesc: "Wholesale Distributors in USA",
+      category: "wordpress",
+      fullDesc:
+        "A Upsell Wholesale website built with WordPress and Elementor using a theme.",
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "AWS"],
+      github: "https://github.com",
+      live: "https://upsellwholesaleusa.com/",
+      image: "assets/image.png",
     },
   ],
 };
@@ -153,7 +175,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-8 bg-transparent p-1 rounded-lg">
+            <TabsList className="grid w-full grid-cols-5 mb-8 bg-transparent p-1 rounded-lg">
               <TabsTrigger
                 value="all"
                 className="data-[state=active]:bg-orange-500 text-white"
@@ -177,6 +199,12 @@ const Projects = () => {
                 className="data-[state=active]:bg-green-500 text-white"
               >
                 MERN Stack
+              </TabsTrigger>
+              <TabsTrigger
+                value="wordpress"
+                className="data-[state=active]:bg-green-500 text-white"
+              >
+                Wordpress
               </TabsTrigger>
             </TabsList>
             {Object.entries(projects).map(([category, projectList]) => (
