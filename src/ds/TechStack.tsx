@@ -1,4 +1,3 @@
-import React from "react";
 import { FaReact, FaNodeJs, FaCss3, FaHtml5, FaJs } from "react-icons/fa";
 import {
   SiMongodb,
